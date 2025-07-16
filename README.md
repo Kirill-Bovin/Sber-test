@@ -33,8 +33,7 @@
 
 ```bash
 # Клонировать репозиторий
-git clone https://github.com/your-org/deposit-recommender.git
-cd deposit-recommender
+git clone https://github.com/Kirill-Bovin/Sber-test.git
 
 # Создать виртуальное окружение
 python3 -m venv venv
