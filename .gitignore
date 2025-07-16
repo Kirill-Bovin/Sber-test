@@ -29,9 +29,6 @@ __pycache__/
 *.sqlite3
 *.db
 
-# Директории с данными
-data/raw/
-data/clean/
 
 # Модели и артефакты
 models/
