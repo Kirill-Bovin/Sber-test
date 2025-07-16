@@ -44,7 +44,8 @@ pip install -r requirements.txt
 ```
 
 ## Настройка
-
+Создайте .env в корне проекта DATABASE_URL=postgresql+asyncpg://kirill:your_password@localhost:5432/deposit_db
+ 
 1. **База данных**: укажите URL вашей БД в `backend/app/db/database.py` или через переменную окружения `DATABASE_URL`.
 ## Миграции базы данных
 
