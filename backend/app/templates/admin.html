@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Управление системой</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 2em auto;
+      padding: 1em;
+      background: #f2f7f2;
+      color: #2c3e50;
+    }
+    h1 {
+      color: #2ABB00;
+    }
+    .status {
+      margin: 1em 0;
+      padding: 1em;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    button {
+      background: #2ABB00;
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    .progress-bar {
+      width: 100%;
+      background: #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      margin: 1em 0;
+    }
+    .progress-bar-inner {
+      height: 20px;
+      background: green;
+      width: 0%;
+      transition: width 0.5s ease;
+    }
+  </style>
+  <script>
+    async function startUpdate() {
+      document.getElementById("status-text").innerText = "Статус: запускаем...";
+      document.getElementById("progress-bar-inner").style.width = "1%";
+      await fetch('/admin/update', { method: 'POST' });
+      pollProgress();
+    }
+
+    async function pollProgress() {
+      try {
+        const res = await fetch('/admin/progress');
+        const data = await res.json();
+
+        document.getElementById("status-text").innerText = "Статус: " + data.status;
+        document.getElementById("progress-bar-inner").style.width = (data.progress || 1) + "%";
+
+        if (data.active) {
+          setTimeout(pollProgress, 2000);
+        }
+      } catch (err) {
+        console.error("Ошибка запроса прогресса", err);
+      }
+    }
+
+    window.onload = pollProgress;
+  </script>
+</head>
+<body>
+  <h1>Панель администратора</h1>
+  <div class="status">
+    <p id="status-text">Статус: {{ status }}</p>
+
+    <div class="progress-bar">
+      <div id="progress-bar-inner" class="progress-bar-inner"></div>
+    </div>
+
+    <button onclick="startUpdate()">Запустить обновление данных</button>
+  </div>
+</body>
+</html>

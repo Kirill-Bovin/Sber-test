@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Рекомендации по вкладам</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <style>
+    /* Sberbank green */
+    :root {
+      --sber-green: #2ABB00;
+      --bg-light: #f2f7f2;
+      --text-dark: #2c3e50;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 700px;
+      margin: 2em auto;
+      padding: 1em;
+      background: var(--bg-light);
+      color: var(--text-dark);
+    }
+    h1, h2, h3 {
+      color: var(--sber-green);
+    }
+    form {
+      background: white;
+      padding: 1em;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      margin-bottom: 1em;
+    }
+    form label {
+      display: block;
+      margin-bottom: 0.5em;
+    }
+    form input, form select {
+      width: 100%;
+      padding: 0.5em;
+      margin-top: 0.25em;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    form button {
+      background: var(--sber-green);
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      margin-top: 1em;
+    }
+    .table-container {
+      overflow-x: auto;
+      margin-bottom: 1em;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    th, td {
+      padding: 0.75em;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+    th {
+      background: var(--sber-green);
+      color: white;
+    }
+    tr:last-child td {
+      border-bottom: none;
+    }
+    #show-more {
+      background: var(--sber-green);
+      color: white;
+      border: none;
+      padding: 0.75em 1.5em;
+      font-size: 1em;
+      border-radius: 4px;
+      cursor: pointer;
+      display: block;
+      margin: 1em auto;
+    }
+    #more-block {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <h1>Подберите вклад</h1>
+  <form action="/recommend" method="post">
+    <label>Сумма, ₽:
+      <input type="number" name="amount" required />
+    </label>
+    <label>Срок, мес.:
+      <input type="number" name="term_months" required />
+    </label>
+    <label>Цель:
+      <select name="goal">
+        <option value="accumulation">Накопление</option>
+        <option value="passive_income">Пассивный доход</option>
+      </select>
+    </label>
+    <label>Риск:
+      <select name="risk_tolerance">
+        <option value="low">Низкий</option>
+        <option value="medium">Средний</option>
+        <option value="high">Высокий</option>
+      </select>
+    </label>
+    <button type="submit">Получить рекомендации</button>
+    <a href="/admin" style="background: #2ABB00; color: white; padding: .5em 1em; border-radius:4px; text-decoration:none;">
+      Админ-панель
+    </a>
+  </form>
+
+  {% if error %}
+    <p style="color: red; text-align: center;">{{ error }}</p>
+  {% endif %}
+
+  {% if top3 %}
+    <h2>Лучшие рекомендации</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Ставка, %</th>
+            <th>Срок, мес.</th>
+            <th>Мин. сумма, ₽</th>
+            <th>Пополнение</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in top3 %}
+            <tr>
+              <td>{{ d.name }}</td>
+              <td>{{ d.rate }}</td>
+              <td>{{ d.term_months }}</td>
+              <td>{{ d.min_amount | int }}</td>
+              <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+
+  {% if next3 %}
+    <h3>Другие варианты</h3>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Название</th>
+            <th>Ставка, %</th>
+            <th>Срок, мес.</th>
+            <th>Мин. сумма, ₽</th>
+            <th>Пополнение</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for d in next3 %}
+            <tr>
+              <td>{{ d.name }}</td>
+              <td>{{ d.rate }}</td>
+              <td>{{ d.term_months }}</td>
+              <td>{{ d.min_amount | int }}</td>
+              <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
+            </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  {% endif %}
+
+  {% if hidden %}
+    <div id="more-block">
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Название</th>
+              <th>Ставка, %</th>
+              <th>Срок, мес.</th>
+              <th>Мин. сумма, ₽</th>
+              <th>Пополнение</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for d in hidden %}
+              <tr>
+                <td>{{ d.name }}</td>
+                <td>{{ d.rate }}</td>
+                <td>{{ d.term_months }}</td>
+                <td>{{ d.min_amount | int }}</td>
+                <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <button id="show-more">Показать ещё варианты</button>
+  {% endif %}
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const btn = document.getElementById('show-more');
+      if (btn) {
+        btn.addEventListener('click', () => {
+          document.getElementById('more-block').style.display = 'block';
+          btn.style.display = 'none';
+        });
+      }
+    });
+  </script>
+</body>
+</html>

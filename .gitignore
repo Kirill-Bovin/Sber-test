@@ -1,0 +1,56 @@
+# Виртуальное окружение
+venv/
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.suo
+*.user
+*.userosscache
+*.sln
+*.sw?
+*~
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.bak
+
+# База данных
+*.sqlite3
+*.db
+
+# Директории с данными
+data/raw/
+data/clean/
+
+# Модели и артефакты
+models/
+*.joblib
+
+# Alembic
+alembic/versions/
+
+# Сертификаты и ключи
+certs/
+others/
+
+# Тестирование
+.pytest_cache/
+htmlcov/
+coverage.xml
+
+
+
+# OS Files
+.DS_Store
+Thumbs.db

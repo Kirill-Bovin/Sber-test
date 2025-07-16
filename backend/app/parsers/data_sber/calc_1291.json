@@ -1,0 +1,3321 @@
+{
+  "depositCalc": {
+    "id": 1291,
+    "title": "Общий калькулятор вкладов (вообще всех, но нет)",
+    "tabNameOnline": "",
+    "tabNameOffline": "",
+    "calcDescription": "",
+    "checkboxes": [],
+    "amountDepositParams": {
+      "text": "",
+      "minValueRub": 100000,
+      "maxValueRub": 99999999,
+      "minValueUsd": 0,
+      "maxValueUsd": 0,
+      "minValueEur": 0,
+      "maxValueEur": 0,
+      "defaultValue": 500000,
+      "maxValueText": ""
+    },
+    "termDepositParams": {
+      "text": "Срок вклада",
+      "minValue": 1,
+      "maxValue": 36,
+      "defaultValue": 5,
+      "fixedValue": "1;2;3;4;5;6;7;8;9;10;11;12;24;36|5",
+      "termLimits": ""
+    },
+    "additionalParams": {
+      "openOnlineCheckboxText": "",
+      "openOnlineTipCheckboxText": "",
+      "pensionerCheckboxText": "",
+      "pensionerTipCheckboxText": "",
+      "capitalizationCheckboxText": "",
+      "capitalizationTipCheckboxText": "",
+      "minBalanceSelection": "",
+      "rubMinBalanceList": "",
+      "eurUsdMinBalanceList": "",
+      "minBalanceTip": "",
+      "replenishmentPossibility": "",
+      "withdrawingPossibility": "",
+      "disclaimer": "",
+      "blockHeader": "",
+      "blockDescription": "",
+      "replenishmentPossibilityText": "",
+      "maxReplenishmentAmountText": "",
+      "depositSaleListText": "",
+      "depositSaleListTip": ""
+    },
+    "outParams": {
+      "accruedPercents": "",
+      "rate": "",
+      "efficientRate": "",
+      "rateType": "nominal",
+      "donationOpportunity": "",
+      "donationBase": "Сумма инвестирования",
+      "datePrefixText": "",
+      "rateTip": "",
+      "button": {
+        "label": "Открыть вклад",
+        "url": "https://www.sberbank.com/sms/dp-website"
+      }
+    },
+    "depositList": [
+      {
+        "id": 2913,
+        "bonusCheckboxList": [
+          {
+            "label": "Есть СберПрайм",
+            "bonusIds": "3311_101|3312_101|3313_101|3314_101|3315_101|3316_101|3317_101|33144_101|33145_101|331220_101|331284_101|331285_101|331286_101|331287_101",
+            "isDefault": true
+          },
+          {
+            "label": "Получаете пенсию или зарплату на&nbsp;Сбер или тратите от&nbsp;30&nbsp;000&nbsp;₽",
+            "bonusIds": "3311_104|3312_104|3313_104|3314_104|3315_104|3316_104|3317_104|33144_104|33145_104|331220_104|331284_104|331285_104|331286_104|331287_104",
+            "isDefault": true
+          },
+          {
+            "label": "Храните на накопительных счетах от 100 000 ₽",
+            "bonusIds": "3311_105|3312_105|3313_105|3314_105|3315_105|3316_105|3317_105|33144_105|33145_105|331220_105|331284_105|331285_105|331286_105|331287_105",
+            "isDefault": true
+          }
+        ],
+        "online": true
+      },
+      {
+        "id": 910,
+        "bonusCheckboxList": [
+          {
+            "label": "Есть СберПрайм",
+            "bonusIds": "33194_101|33195_101|33196_101|33197_101|33198_101|33199_101|331165_101|331205_101|331217_101|331221_101|331261_101|331262_101|331263_101|331264_101",
+            "isDefault": true
+          },
+          {
+            "label": "Получаете пенсию или зарплату на&nbsp;Сбер или тратите от&nbsp;30&nbsp;000&nbsp;₽",
+            "bonusIds": "33194_104|33195_104|33196_104|33197_104|33198_104|33199_104|331165_104|331205_104|331217_104|331221_104|331261_104|331262_104|331263_104|331264_104",
+            "isDefault": true
+          },
+          {
+            "label": "Храните на накопительных счетах от 100 000 ₽",
+            "bonusIds": "33194_105|33195_105|33196_105|33197_105|33198_105|33199_105|331165_105|331205_105|331217_105|331221_105|331261_105|331262_105|331263_105|331264_105",
+            "isDefault": true
+          }
+        ],
+        "online": true
+      },
+      {
+        "id": 2650,
+        "online": true
+      },
+      {
+        "id": 2916,
+        "online": true
+      }
+    ],
+    "depositOnlineQvbIdList": [
+      3074,
+      3075,
+      3076,
+      3077,
+      3078,
+      3079,
+      3080,
+      3202,
+      3203,
+      3396,
+      3397,
+      3398,
+      3679,
+      3680,
+      3681,
+      3682,
+      3683,
+      3684,
+      3685,
+      3686,
+      3687,
+      4420,
+      5133,
+      5283,
+      5296,
+      5335,
+      49369,
+      49370,
+      49371,
+      49372,
+      55588,
+      55589,
+      55590,
+      55591,
+      4915,
+      4916,
+      4917,
+      4918,
+      4919,
+      4920,
+      4921,
+      4922,
+      4923,
+      4924,
+      4925,
+      5214,
+      5321,
+      5322,
+      5323,
+      5324,
+      5325,
+      5326,
+      5327,
+      5328,
+      5329,
+      5330,
+      5331,
+      5332,
+      5358,
+      50048,
+      50049,
+      50050,
+      50051,
+      56280,
+      56281,
+      56282,
+      56283,
+      56284
+    ],
+    "depositNotOnlineQvbIdList": [],
+    "depositSaleList": [
+      {
+        "id": 2650,
+        "online": true
+      }
+    ],
+    "depositSaleOnlineQvbIdList": [
+      4915,
+      4916,
+      4917,
+      4918,
+      4919,
+      4920,
+      4921,
+      4922,
+      4923,
+      4924,
+      4925,
+      5214,
+      5358,
+      50048,
+      50049,
+      50050,
+      50051
+    ],
+    "depositSaleNotOnlineQvbIdList": []
+  },
+  "valQvbList": [
+    {
+      "currencyCode": 810,
+      "csQvbList": [
+        {
+          "segmentCode": 0,
+          "qvbList": [
+            {
+              "entityId": 3074,
+              "code": 331,
+              "subCode": 1,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3311,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3311_101"
+                },
+                {
+                  "id": 3311,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3311_104"
+                },
+                {
+                  "id": 3311,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3311_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3075,
+              "code": 331,
+              "subCode": 2,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3312,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3312_101"
+                },
+                {
+                  "id": 3312,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3312_104"
+                },
+                {
+                  "id": 3312,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3312_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3076,
+              "code": 331,
+              "subCode": 3,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 2,
+              "endTerm": 2,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3313,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3313_101"
+                },
+                {
+                  "id": 3313,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3313_104"
+                },
+                {
+                  "id": 3313,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3313_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3077,
+              "code": 331,
+              "subCode": 4,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3314,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3314_101"
+                },
+                {
+                  "id": 3314,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3314_104"
+                },
+                {
+                  "id": 3314,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3314_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3078,
+              "code": 331,
+              "subCode": 5,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3315,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3315_101"
+                },
+                {
+                  "id": 3315,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3315_104"
+                },
+                {
+                  "id": 3315,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3315_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3079,
+              "code": 331,
+              "subCode": 6,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 6,
+              "endTerm": 6,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3316,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3316_101"
+                },
+                {
+                  "id": 3316,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3316_104"
+                },
+                {
+                  "id": 3316,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3316_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3080,
+              "code": 331,
+              "subCode": 7,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1646254800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 12,
+              "endTerm": 12,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 3317,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "3317_101"
+                },
+                {
+                  "id": 3317,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "3317_104"
+                },
+                {
+                  "id": 3317,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "3317_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3202,
+              "code": 331,
+              "subCode": 44,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1654462800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 15.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 15.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 4,
+              "endTerm": 4,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33144,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33144_101"
+                },
+                {
+                  "id": 33144,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33144_104"
+                },
+                {
+                  "id": 33144,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33144_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3203,
+              "code": 331,
+              "subCode": 45,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1654462800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 7,
+              "endTerm": 7,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33145,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33145_101"
+                },
+                {
+                  "id": 33145,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33145_104"
+                },
+                {
+                  "id": 33145,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33145_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3396,
+              "code": 331,
+              "subCode": 56,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1663534800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 10.4
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 10.6
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 10.8
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 18,
+              "endTerm": 18,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 3397,
+              "code": 331,
+              "subCode": 57,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1663534800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 10.4
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 10.6
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 10.8
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 24,
+              "endTerm": 24,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 3398,
+              "code": 331,
+              "subCode": 58,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1663534800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 7.9
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 8.1
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 8.3
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 36,
+              "endTerm": 36,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 3679,
+              "code": 331,
+              "subCode": 94,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.35
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.55
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.75
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33194,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33194_101"
+                },
+                {
+                  "id": 33194,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33194_104"
+                },
+                {
+                  "id": 33194,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33194_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3680,
+              "code": 331,
+              "subCode": 95,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.35
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.55
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.75
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33195,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33195_101"
+                },
+                {
+                  "id": 33195,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33195_104"
+                },
+                {
+                  "id": 33195,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33195_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3681,
+              "code": 331,
+              "subCode": 96,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.35
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.55
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.75
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 2,
+              "endTerm": 2,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33196,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33196_101"
+                },
+                {
+                  "id": 33196,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33196_104"
+                },
+                {
+                  "id": 33196,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33196_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3682,
+              "code": 331,
+              "subCode": 97,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.25
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.45
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.65
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33197,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33197_101"
+                },
+                {
+                  "id": 33197,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33197_104"
+                },
+                {
+                  "id": 33197,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33197_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3683,
+              "code": 331,
+              "subCode": 98,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.25
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.45
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.65
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33198,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33198_101"
+                },
+                {
+                  "id": 33198,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33198_104"
+                },
+                {
+                  "id": 33198,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33198_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3684,
+              "code": 331,
+              "subCode": 99,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 12.6
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 12.8
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 12,
+              "endTerm": 12,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 33199,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "33199_101"
+                },
+                {
+                  "id": 33199,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "33199_104"
+                },
+                {
+                  "id": 33199,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "33199_105"
+                }
+              ]
+            },
+            {
+              "entityId": 3685,
+              "code": 331,
+              "subCode": 100,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 9.3
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 9.5
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 9.7
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 18,
+              "endTerm": 18,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 3686,
+              "code": 331,
+              "subCode": 101,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 9.3
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 9.5
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 9.7
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 24,
+              "endTerm": 24,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 3687,
+              "code": 331,
+              "subCode": 102,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 6.9
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 7.1
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 7.3
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 36,
+              "endTerm": 36,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4420,
+              "code": 331,
+              "subCode": 165,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1682629200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.9
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.1
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 6,
+              "endTerm": 6,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331165,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331165_101"
+                },
+                {
+                  "id": 331165,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331165_104"
+                },
+                {
+                  "id": 331165,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331165_105"
+                }
+              ]
+            },
+            {
+              "entityId": 4915,
+              "code": 337,
+              "subCode": 23,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4916,
+              "code": 337,
+              "subCode": 24,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4917,
+              "code": 337,
+              "subCode": 25,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 2,
+              "endTerm": 2,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4918,
+              "code": 337,
+              "subCode": 26,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4919,
+              "code": 337,
+              "subCode": 27,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4920,
+              "code": 337,
+              "subCode": 28,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 15.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 16.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 18.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 4,
+              "endTerm": 4,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4921,
+              "code": 337,
+              "subCode": 29,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 6,
+              "endTerm": 6,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4922,
+              "code": 337,
+              "subCode": 30,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 12,
+              "endTerm": 12,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4923,
+              "code": 337,
+              "subCode": 31,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 10.4
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 10.95
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 11.5
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 18,
+              "endTerm": 18,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4924,
+              "code": 337,
+              "subCode": 32,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 10.4
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 10.95
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 11.5
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 24,
+              "endTerm": 24,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 4925,
+              "code": 337,
+              "subCode": 33,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1692565200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 7.9
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 8.45
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 9.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 36,
+              "endTerm": 36,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5133,
+              "code": 331,
+              "subCode": 205,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1694984400000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 15.15
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.35
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 5,
+              "endTerm": 5,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331205,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331205_101"
+                },
+                {
+                  "id": 331205,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331205_104"
+                },
+                {
+                  "id": 331205,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331205_105"
+                }
+              ]
+            },
+            {
+              "entityId": 5214,
+              "code": 337,
+              "subCode": 166,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1694984400000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 15.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 16.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 18.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 5,
+              "endTerm": 5,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5283,
+              "code": 331,
+              "subCode": 217,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1695589200000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 15.15
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.35
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 4,
+              "endTerm": 4,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331217,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331217_101"
+                },
+                {
+                  "id": 331217,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331217_104"
+                },
+                {
+                  "id": 331217,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331217_105"
+                }
+              ]
+            },
+            {
+              "entityId": 5296,
+              "code": 331,
+              "subCode": 220,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 15.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 15.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 5,
+              "endTerm": 5,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331220,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331220_101"
+                },
+                {
+                  "id": 331220,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331220_104"
+                },
+                {
+                  "id": 331220,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331220_105"
+                }
+              ]
+            },
+            {
+              "entityId": 5321,
+              "code": 337,
+              "subCode": 192,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.35
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.6
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.85
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5322,
+              "code": 337,
+              "subCode": 193,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.35
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.6
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.85
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 1,
+              "endTerm": 1,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5323,
+              "code": 337,
+              "subCode": 194,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.35
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.6
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 15.85
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 2,
+              "endTerm": 2,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5324,
+              "code": 337,
+              "subCode": 195,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.25
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.5
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.75
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5325,
+              "code": 337,
+              "subCode": 196,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.25
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.5
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.75
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 3,
+              "endTerm": 3,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5326,
+              "code": 337,
+              "subCode": 197,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 16.2
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.45
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 4,
+              "endTerm": 4,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5327,
+              "code": 337,
+              "subCode": 198,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 16.2
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.45
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 5,
+              "endTerm": 5,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5328,
+              "code": 337,
+              "subCode": 199,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.2
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 6,
+              "endTerm": 6,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5329,
+              "code": 337,
+              "subCode": 200,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 13.65
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 12,
+              "endTerm": 12,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5330,
+              "code": 337,
+              "subCode": 201,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 9.3
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 9.85
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 10.4
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 18,
+              "endTerm": 18,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5331,
+              "code": 337,
+              "subCode": 202,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 9.3
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 9.85
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 10.4
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 24,
+              "endTerm": 24,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5332,
+              "code": 337,
+              "subCode": 203,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 6.9
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 7.45
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 8.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 36,
+              "endTerm": 36,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 5335,
+              "code": 331,
+              "subCode": 221,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1698094800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 12.6
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 12.8
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 9,
+              "endTerm": 9,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331221,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331221_101"
+                },
+                {
+                  "id": 331221,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331221_104"
+                },
+                {
+                  "id": 331221,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331221_105"
+                }
+              ]
+            },
+            {
+              "entityId": 5358,
+              "code": 337,
+              "subCode": 206,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1698094800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 9,
+              "endTerm": 9,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 49369,
+              "code": 331,
+              "subCode": 261,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.9
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.1
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 7,
+              "endTerm": 7,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331261,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331261_101"
+                },
+                {
+                  "id": 331261,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331261_104"
+                },
+                {
+                  "id": 331261,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331261_105"
+                }
+              ]
+            },
+            {
+              "entityId": 49370,
+              "code": 331,
+              "subCode": 262,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.9
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.1
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 8,
+              "endTerm": 8,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331262,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331262_101"
+                },
+                {
+                  "id": 331262,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331262_104"
+                },
+                {
+                  "id": 331262,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331262_105"
+                }
+              ]
+            },
+            {
+              "entityId": 49371,
+              "code": 331,
+              "subCode": 263,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 12.6
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 12.8
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 10,
+              "endTerm": 10,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331263,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331263_101"
+                },
+                {
+                  "id": 331263,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331263_104"
+                },
+                {
+                  "id": 331263,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331263_105"
+                }
+              ]
+            },
+            {
+              "entityId": 49372,
+              "code": 331,
+              "subCode": 264,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 6,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 12.6
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 12.8
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 11,
+              "endTerm": 11,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331264,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331264_101"
+                },
+                {
+                  "id": 331264,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331264_104"
+                },
+                {
+                  "id": 331264,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331264_105"
+                }
+              ]
+            },
+            {
+              "entityId": 50048,
+              "code": 337,
+              "subCode": 240,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 7,
+              "endTerm": 7,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 50049,
+              "code": 337,
+              "subCode": 241,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 15.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 17.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 8,
+              "endTerm": 8,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 50050,
+              "code": 337,
+              "subCode": 242,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 10,
+              "endTerm": 10,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 50051,
+              "code": 337,
+              "subCode": 243,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 9,
+              "begDate": 1703538000000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.75
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.0
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 11,
+              "endTerm": 11,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 55588,
+              "code": 331,
+              "subCode": 284,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 14.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 14.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 8,
+              "endTerm": 8,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331284,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331284_101"
+                },
+                {
+                  "id": 331284,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331284_104"
+                },
+                {
+                  "id": 331284,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331284_105"
+                }
+              ]
+            },
+            {
+              "entityId": 55589,
+              "code": 331,
+              "subCode": 285,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 9,
+              "endTerm": 9,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331285,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331285_101"
+                },
+                {
+                  "id": 331285,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331285_104"
+                },
+                {
+                  "id": 331285,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331285_105"
+                }
+              ]
+            },
+            {
+              "entityId": 55590,
+              "code": 331,
+              "subCode": 286,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 10,
+              "endTerm": 10,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331286,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331286_101"
+                },
+                {
+                  "id": 331286,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331286_104"
+                },
+                {
+                  "id": 331286,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331286_105"
+                }
+              ]
+            },
+            {
+              "entityId": 55591,
+              "code": 331,
+              "subCode": 287,
+              "isReplenish": true,
+              "isWithdraw": false,
+              "depositName": "СберВклад",
+              "depositShortName": "СберВклад",
+              "capitalisation": 9,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 100000.0,
+                  "sumEnd": 499999.99,
+                  "rate": 13.5
+                },
+                {
+                  "sumBeg": 500000.0,
+                  "sumEnd": 999999.99,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1000000.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 13.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 11,
+              "endTerm": 11,
+              "withdrawOptions": 1,
+              "bonuses": [
+                {
+                  "id": 331287,
+                  "code": 101,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За подписку \"СберПрайм+\"",
+                  "idCode": "331287_101"
+                },
+                {
+                  "id": 331287,
+                  "code": 104,
+                  "terrBankCode": "038",
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "За получение ЗП на карты Сбербанка",
+                  "idCode": "331287_104"
+                },
+                {
+                  "id": 331287,
+                  "code": 105,
+                  "percentRate": 0.7,
+                  "bonusRateMax": 2.1,
+                  "description": "за суммарный остаток на Накопительных счетах 100 000 рублей и более",
+                  "idCode": "331287_105"
+                }
+              ]
+            },
+            {
+              "entityId": 56280,
+              "code": 337,
+              "subCode": 264,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.2
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 7,
+              "endTerm": 7,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 56281,
+              "code": 337,
+              "subCode": 265,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 13.7
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 14.95
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 16.2
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 8,
+              "endTerm": 8,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 56282,
+              "code": 337,
+              "subCode": 266,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 13.65
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 9,
+              "endTerm": 9,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 56283,
+              "code": 337,
+              "subCode": 267,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 13.65
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 10,
+              "endTerm": 10,
+              "withdrawOptions": 1
+            },
+            {
+              "entityId": 56284,
+              "code": 337,
+              "subCode": 268,
+              "isReplenish": false,
+              "isWithdraw": false,
+              "depositName": "Лучший %",
+              "depositShortName": "Лучший %",
+              "capitalisation": 6,
+              "begDate": 1708030800000,
+              "endDate": 4070898000000,
+              "tarifPlanFpList": [],
+              "dcfTarList": [
+                {
+                  "sumBeg": 0.0,
+                  "sumEnd": 1.04,
+                  "rate": 12.4
+                },
+                {
+                  "sumBeg": 1.05,
+                  "sumEnd": 1.99,
+                  "rate": 13.65
+                },
+                {
+                  "sumBeg": 2.0,
+                  "sumEnd": 999999999999.0,
+                  "rate": 14.9
+                }
+              ],
+              "termFixed": true,
+              "begTerm": 11,
+              "endTerm": 11,
+              "withdrawOptions": 1
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

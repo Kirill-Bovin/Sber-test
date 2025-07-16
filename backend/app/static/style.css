@@ -1,0 +1,29 @@
+.top3-container {
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  padding: 1em;
+  margin-bottom: 1em;
+  background: #ecf0f1;
+}
+.top3-item {
+  padding: 0.5em;
+  margin-bottom: 0.5em;
+  background: white;
+  border-radius: 4px;
+}
+.others-list {
+  list-style: none;
+  padding: 0;
+}
+.others-list li {
+  padding: 0.5em;
+  margin-bottom: 0.3em;
+  background: #f7f9fa;
+  border-radius: 4px;
+}
+#show-more {
+  display: block;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  font-size: 1em;
+}
