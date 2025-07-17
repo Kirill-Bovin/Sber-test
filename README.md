@@ -38,6 +38,10 @@
 ```bash
 git clone https://github.com/Kirill-Bovin/Sber-test.git
 ```
+Перейти в репозиторий
+```bash
+cd Sber-test 
+```
 
 ## Создать виртуальное окружение
 ```bash
@@ -45,10 +49,6 @@ python3 -m venv venv
 ```
 ```bash
 source venv/bin/activate
-```
-Перейти в репозиторий
-```bash
-cd Sber-test 
 ```
 
 ## Установить зависимости
