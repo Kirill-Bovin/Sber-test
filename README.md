@@ -54,7 +54,9 @@ DATABASE_URL=postgresql+asyncpg://kirill:your_password@localhost:5432/deposit_db
 
 
 ## Запуск приложения
+
 Находясь в директории Sber-test
+
 Запустить сервер FastAPI:
 
 ```bash
