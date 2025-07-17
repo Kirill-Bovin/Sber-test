@@ -46,8 +46,7 @@ python3 -m venv venv
 ```bash
 source venv/bin/activate
 ```
-
-# Перейти в репозиторий
+Перейти в репозиторий
 ```bash
 cd Sber-test 
 ```
