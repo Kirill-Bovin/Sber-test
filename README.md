@@ -48,18 +48,15 @@ pip install -r requirements.txt
 Создайте .env в корне проекта DATABASE_URL=postgresql+asyncpg://kirill:your_password@localhost:5432/deposit_db
  ```
 
-1. **База данных**: укажите URL вашей БД в `backend/app/db/database.py` или через переменную окружения `DATABASE_URL`.
-## Миграции базы данных
-
-Применить миграции Alembic для создания/обновления таблиц:
-
-```bash
-alembic upgrade head
-```
 
 ## Запуск приложения
 
 Запустить сервер FastAPI:
+
+```
+cd Sber-test 
+```
+и в ней уже запустить команду
 
 ```bash
 uvicorn backend.app.main:app --reload
@@ -67,19 +64,18 @@ uvicorn backend.app.main:app --reload
 Открыть http://127.0.0.1:8000 там будет ии агент
 
 
-## Подготовка данных и обучение модели
+## Подготовка данных и переобучение модели(если нужно)
 
 ### Подготовка данных
 
 ```bash
-python scripts/data_prep.py   --input data/raw/deposits.csv   --output data/clean/clean_deposits.csv
+python scripts/data_prep.py   --input data/raw/synthetic_deposits.csv   --output data/clean/clean_deposits.csv
 ```
 
 ### Обучение моделей
 
 ```bash
-python scripts/train_model.py   --data data/clean/clean_deposits.csv   --model-output models/logreg_rec.joblib   --model-output models/decision_tree_rec.joblib
-```
+python scripts/train_model.py --data data/clean/clean_deposits.csv --model-output models/deposit_recommender.joblib```
 
 ## Ноутбуки
 
@@ -97,4 +93,5 @@ pytest
 В корне проекта:
 
 report.pdf
+
 presentation.pptx
