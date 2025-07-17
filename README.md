@@ -57,11 +57,6 @@ DATABASE_URL=postgresql+asyncpg://kirill:your_password@localhost:5432/deposit_db
 
 Запустить сервер FastAPI:
 
-```
-cd Sber-test 
-```
-и в ней уже запустить команду
-
 ```bash
 uvicorn backend.app.main:app --reload
 ```
