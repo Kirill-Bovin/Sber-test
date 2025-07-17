@@ -1,9 +1,11 @@
 import time
 from pathlib import Path
-from selenium.common.exceptions import TimeoutException, NoSuchElementException
+
+from selenium.common.exceptions import NoSuchElementException, TimeoutException
 from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
+
 
 def save_page(url: str, basename: str, driver):
     save_dir = Path(__file__).parent.parent / "page_sber"
@@ -29,7 +31,9 @@ def save_page(url: str, basename: str, driver):
         wait_rates(20)
         print(f"[{basename}] Список ставок появился при первом заходе.")
     except TimeoutException:
-        print(f"[{basename}] Список ставок НЕ появился при первом заходе, перезагружаем...")
+        print(
+            f"[{basename}] Список ставок НЕ появился при первом заходе, перезагружаем..."
+        )
 
     # Перезагрузка
     driver.refresh()
@@ -53,6 +57,6 @@ def save_page(url: str, basename: str, driver):
     time.sleep(2)
 
     # Сохраняем финальный HTML
-    with open(path, 'w', encoding='utf-8') as f:
+    with open(path, "w", encoding="utf-8") as f:
         f.write(driver.page_source)
     print(f"Сохранено: {path}")

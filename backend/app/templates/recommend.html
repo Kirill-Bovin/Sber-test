@@ -3,25 +3,31 @@
 <head>
   <meta charset="UTF-8" />
   <title>Рекомендации по вкладам</title>
-  <link rel="stylesheet" href="/static/style.css" />
+  <!-- Подключаем стили Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1mLeAKFZwqziLPkBCyXvtyNFrn+VwHFoDprPvvVWNPEO3M/MITx1eahK9uEpsS9YI" crossorigin="anonymous">
+
   <style>
-    /* Sberbank green */
+    /* Основные цвета */
     :root {
-      --sber-green: #2ABB00;
-      --bg-light: #f2f7f2;
-      --text-dark: #2c3e50;
+      --bs-primary-color: #2ABB00; /* Основной зеленый цвет Сбербанка */
+      --bs-body-bg: #f2f7f2;       /* Светлый фон страницы */
+      --bs-text-color: #2c3e50;    /* Темный основной текст */
     }
+
     body {
-      font-family: Arial, sans-serif;
+      font-family: Arial, Helvetica, sans-serif;
       max-width: 700px;
       margin: 2em auto;
       padding: 1em;
-      background: var(--bg-light);
-      color: var(--text-dark);
+      background: var(--bs-body-bg); /* Фон страницы */
+      color: var(--bs-text-color);   /* Цвет текста */
     }
+
     h1, h2, h3 {
-      color: var(--sber-green);
+      color: var(--bs-primary-color); /* Заголовки зеленого цвета */
     }
+
+    /* Форма подбора вклада */
     form {
       background: white;
       padding: 1em;
@@ -29,31 +35,42 @@
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       margin-bottom: 1em;
     }
+
     form label {
       display: block;
       margin-bottom: 0.5em;
     }
-    form input, form select {
+
+    form input,
+    form select {
       width: 100%;
       padding: 0.5em;
       margin-top: 0.25em;
       border: 1px solid #ccc;
       border-radius: 4px;
     }
+
     form button {
-      background: var(--sber-green);
+      background: var(--bs-primary-color); /* Зеленая кнопка отправки формы */
       color: white;
       border: none;
       padding: 0.75em 1.5em;
       font-size: 1em;
       border-radius: 4px;
       cursor: pointer;
-      margin-top: 1em;
+      transition: all 0.3s ease-in-out;
     }
+
+    form button:hover {
+      transform: scale(1.05); /* Увеличение кнопки при наведении */
+    }
+
+    /* Таблицы рекомендаций */
     .table-container {
       overflow-x: auto;
       margin-bottom: 1em;
     }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -62,20 +79,25 @@
       overflow: hidden;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
+
     th, td {
       padding: 0.75em;
       text-align: left;
       border-bottom: 1px solid #e0e0e0;
     }
+
     th {
-      background: var(--sber-green);
+      background: var(--bs-primary-color); /* Зеленые заголовки таблицы */
       color: white;
     }
+
     tr:last-child td {
       border-bottom: none;
     }
+
+    /* Кнопка показать больше вариантов */
     #show-more {
-      background: var(--sber-green);
+      background: var(--bs-primary-color);
       color: white;
       border: none;
       padding: 0.75em 1.5em;
@@ -84,137 +106,200 @@
       cursor: pointer;
       display: block;
       margin: 1em auto;
+      transition: all 0.3s ease-in-out;
     }
+
+    #show-more:hover {
+      transform: scale(1.05); /* Увеличение кнопки при наведении */
+    }
+
     #more-block {
       display: none;
+    }
+
+    .threshold-info {
+      font-size: 0.9em;
+      color: #555;
+      margin-bottom: 1em;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <h1>Подберите вклад</h1>
-  <form action="/recommend" method="post">
-    <label>Сумма, ₽:
-      <input type="number" name="amount" required />
-    </label>
-    <label>Срок, мес.:
-      <input type="number" name="term_months" required />
-    </label>
-    <label>Цель:
-      <select name="goal">
-        <option value="accumulation">Накопление</option>
-        <option value="passive_income">Пассивный доход</option>
-      </select>
-    </label>
-    <label>Риск:
-      <select name="risk_tolerance">
-        <option value="low">Низкий</option>
-        <option value="medium">Средний</option>
-        <option value="high">Высокий</option>
-      </select>
-    </label>
-    <button type="submit">Получить рекомендации</button>
-    <a href="/admin" style="background: #2ABB00; color: white; padding: .5em 1em; border-radius:4px; text-decoration:none;">
-      Админ-панель
-    </a>
+
+  <header class="mb-4">
+    <h1 class="display-6 fw-normal mb-3">Подберите оптимальный вклад</h1>
+  </header>
+
+  <form action="/recommend" method="post" class="shadow p-3 mb-5 bg-white rounded">
+    <div class="row g-3 align-items-center">
+      <div class="col-auto">
+        <label for="amount" class="form-label">Сумма, ₽:</label>
+        <input type="number" class="form-control" id="amount" name="amount" required />
+      </div>
+
+      <div class="col-auto">
+        <label for="term_months" class="form-label" style="margin-top: 0.5rem;">Срок, мес.:</label>
+        <input type="number" class="form-control" id="term_months" name="term_months" required />
+      </div>
+
+      <div class="col-auto">
+        <label for="goal" class="form-label" style="margin-top: 0.5rem;">Цель:</label>
+        <select class="form-select" id="goal" name="goal" required>
+          <option value="accumulation">Накопление</option>
+          <option value="passive_income">Пассивный доход</option>
+        </select>
+      </div>
+
+      <div class="col-auto">
+        <label for="can_replenish" class="form-label" style="margin-top: 0.5rem;">Возможность пополнять</label>
+        <select class="form-select" id="can_replenish" name="can_replenish" required>
+          <option value="any">Не важно</option>
+          <option value="yes">Да</option>
+          <option value="no">Нет</option>
+        </select>
+      </div>
+
+      <div class="col-auto">
+        <label for="risk_tolerance" class="form-label" style="margin-top: 0.5rem;">Риск:</label>
+        <select class="form-select" id="risk_tolerance" name="risk_tolerance" required>
+          <option value="low">Низкий</option>
+          <option value="medium">Средний</option>
+          <option value="high">Высокий</option>
+        </select>
+      </div>
+
+      <div class="col-auto d-flex gap-2 align-items-center">
+        <button type="submit" class="btn btn-success" style="margin-top: 1rem;">
+          Получить рекомендации
+        </button>
+        <a href="/admin" class="btn btn-success" style="margin-top: 1rem; color: green; text-decoration: none;">
+          Админ-панель
+        </a>
+      </div>
+    </div>
   </form>
 
   {% if error %}
-    <p style="color: red; text-align: center;">{{ error }}</p>
+    <div class="alert alert-danger mt-4" role="alert">
+      {{ error }}
+    </div>
+  {% endif %}
+
+  {% if threshold is defined %}
+  <div class="threshold-info">
+    Рекомендации отфильтрованы по порогу вероятности ≥ {{ (threshold * 100) | round(1) }}%.
+  </div>
   {% endif %}
 
   {% if top3 %}
-    <h2>Лучшие рекомендации</h2>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Название</th>
-            <th>Ставка, %</th>
-            <th>Срок, мес.</th>
-            <th>Мин. сумма, ₽</th>
-            <th>Пополнение</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for d in top3 %}
-            <tr>
-              <td>{{ d.name }}</td>
-              <td>{{ d.rate }}</td>
-              <td>{{ d.term_months }}</td>
-              <td>{{ d.min_amount | int }}</td>
-              <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  {% endif %}
-
-  {% if next3 %}
-    <h3>Другие варианты</h3>
-    <div class="table-container">
-      <table>
-        <thead>
-          <tr>
-            <th>Название</th>
-            <th>Ставка, %</th>
-            <th>Срок, мес.</th>
-            <th>Мин. сумма, ₽</th>
-            <th>Пополнение</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for d in next3 %}
-            <tr>
-              <td>{{ d.name }}</td>
-              <td>{{ d.rate }}</td>
-              <td>{{ d.term_months }}</td>
-              <td>{{ d.min_amount | int }}</td>
-              <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
-            </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  {% endif %}
-
-  {% if hidden %}
-    <div id="more-block">
-      <div class="table-container">
-        <table>
+    <section class="mt-4">
+      <h2 class="fw-bold">Лучшие рекомендации</h2>
+      <div class="table-responsive shadow-sm p-3 mb-5 bg-white rounded">
+        <table class="table table-striped table-hover">
           <thead>
             <tr>
-              <th>Название</th>
-              <th>Ставка, %</th>
-              <th>Срок, мес.</th>
-              <th>Мин. сумма, ₽</th>
-              <th>Пополнение</th>
+              <th scope="col">Название</th>
+              <th scope="col">Ставка, %</th>
+              <th scope="col">Срок, мес.</th>
+              <th scope="col">Мин. сумма, ₽</th>
+              <th scope="col">Пополнение</th>
+              <th scope="col">Вероятность, %</th>
             </tr>
           </thead>
           <tbody>
-            {% for d in hidden %}
+            {% for d in top3 %}
               <tr>
                 <td>{{ d.name }}</td>
                 <td>{{ d.rate }}</td>
                 <td>{{ d.term_months }}</td>
                 <td>{{ d.min_amount | int }}</td>
                 <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
+                <td>{{ (d.probability * 100) | round(2) }}</td>
               </tr>
             {% endfor %}
           </tbody>
         </table>
       </div>
-    </div>
-    <button id="show-more">Показать ещё варианты</button>
+    </section>
   {% endif %}
+
+  {% if next3 %}
+    <section class="mt-4">
+      <h3 class="fw-bold">Другие варианты</h3>
+      <div class="table-responsive shadow-sm p-3 mb-5 bg-white rounded">
+        <table class="table table-striped table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Название</th>
+              <th scope="col">Ставка, %</th>
+              <th scope="col">Срок, мес.</th>
+              <th scope="col">Мин. сумма, ₽</th>
+              <th scope="col">Пополнение</th>
+              <th scope="col">Вероятность, %</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for d in next3 %}
+              <tr>
+                <td>{{ d.name }}</td>
+                <td>{{ d.rate }}</td>
+                <td>{{ d.term_months }}</td>
+                <td>{{ d.min_amount | int }}</td>
+                <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
+                <td>{{ (d.probability * 100) | round(2) }}</td>
+              </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </section>
+  {% endif %}
+
+  {% if hidden %}
+    <section class="mt-4">
+      <div id="more-block">
+        <div class="table-responsive shadow-sm p-3 mb-5 bg-white rounded">
+          <table class="table table-striped table-hover">
+            <thead>
+              <tr>
+                <th scope="col">Название</th>
+                <th scope="col">Ставка, %</th>
+                <th scope="col">Срок, мес.</th>
+                <th scope="col">Мин. сумма, ₽</th>
+                <th scope="col">Пополнение</th>
+                <th scope="col">Вероятность, %</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for d in hidden %}
+                <tr>
+                  <td>{{ d.name }}</td>
+                  <td>{{ d.rate }}</td>
+                  <td>{{ d.term_months }}</td>
+                  <td>{{ d.min_amount | int }}</td>
+                  <td>{{ 'Да' if d.can_replenish else 'Нет' }}</td>
+                  <td>{{ (d.probability * 100) | round(2) }}</td>
+                </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <button id="show-more" class="btn btn-success w-100 my-3">Показать ещё варианты</button>
+    </section>
+  {% endif %}
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
   <script>
     document.addEventListener('DOMContentLoaded', () => {
-      const btn = document.getElementById('show-more');
-      if (btn) {
-        btn.addEventListener('click', () => {
+      const showMoreBtn = document.getElementById('show-more');
+      if (showMoreBtn) {
+        showMoreBtn.addEventListener('click', () => {
           document.getElementById('more-block').style.display = 'block';
-          btn.style.display = 'none';
+          showMoreBtn.style.display = 'none';
         });
       }
     });
