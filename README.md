@@ -34,12 +34,12 @@
    
 ## Установка
 
-# Клонировать репозиторий
+## Клонировать репозиторий
 ```bash
 git clone https://github.com/Kirill-Bovin/Sber-test.git
 ```
 
-# Создать виртуальное окружение
+## Создать виртуальное окружение
 ```bash
 python3 -m venv venv
 ```
@@ -51,13 +51,13 @@ source venv/bin/activate
 cd Sber-test 
 ```
 
-# Установить зависимости
+## Установить зависимости
 ```bash
 pip install -r requirements.txt
 ```
 
 ## Настройка
-# Создайте файл .env в корне проекта Sber-test
+## Создайте файл .env в корне проекта Sber-test
 ```
 DATABASE_URL=postgresql+asyncpg://kirill:your_password@localhost:5432/deposit_db
 ```
