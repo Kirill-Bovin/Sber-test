@@ -76,6 +76,7 @@ python scripts/data_prep.py   --input data/raw/synthetic_deposits.csv   --output
 
 ```bash
 python scripts/train_model.py --data data/clean/clean_deposits.csv --model-output models/deposit_recommender.joblib```
+```
 
 ## Ноутбуки
 
